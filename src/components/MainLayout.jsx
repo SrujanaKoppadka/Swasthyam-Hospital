@@ -15,9 +15,9 @@ import { cn } from "../lib/utils";
 import { FaWhatsapp } from "react-icons/fa";
 
 const CONTACT_INFO = {
-	md: ["8151938206", "7829712073", "9008608842"],
+	md: ["8151938206", "7829712073", "9901984418"],
 	appointments: "9901984418",
-	emergency: "9008608842",
+	emergency: "9901984418",
 	location: "Muddinpalya, Bangalore",
 	email: "swasthyamhospitals@gmail.com",
 };

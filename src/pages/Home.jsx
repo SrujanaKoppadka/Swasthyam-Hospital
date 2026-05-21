@@ -332,7 +332,7 @@ function HeroSection() {
 								<CalendarDays className="w-4 h-4" /> Book Appointment
 							</Link>
 							<a
-								href="tel:9008608842"
+								href="tel:9901984418"
 								className="h-btno flex items-center gap-2"
 								style={{
 									background: "rgba(255,255,255,0.07)",
@@ -636,7 +636,7 @@ function HeroBookingForm()  {
 				}}
 			>
 				Need help? Call{" "}
-				<span style={{ color: "#e05c1a", fontWeight: 700 }}>9008608842</span>
+				<span style={{ color: "#e05c1a", fontWeight: 700 }}>9901984418</span>
 			</div>
 		</form>
 	);
@@ -644,7 +644,7 @@ function HeroBookingForm()  {
 
 function HighlightsBar() {
 	return (
-		<section style={{ background: "#1a6fc4" }}>
+		<section style={{ background: "#d85b03" }}>
 			{/* FIX: divide-x doesn't work on 2-col grid on mobile — removed divide, use gap instead */}
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
 				{[
@@ -946,8 +946,7 @@ function FacilitiesShowcase() {
 						standards of healthcare.
 					</p>
 				</div>
-				{/* FIX: 2 cols on mobile, 4 on lg */}
-				<div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
 					{[
 						{
 							title: "Modern ICU",
@@ -955,6 +954,7 @@ function FacilitiesShowcase() {
 							color: "#ef4444",
 							bg: "rgba(239,68,68,0.07)",
 							Icon: Activity,
+							image: icuEmergencyImg,
 						},
 						{
 							title: "Operation Theatres",
@@ -962,6 +962,7 @@ function FacilitiesShowcase() {
 							color: "#1a6fc4",
 							bg: "rgba(26,111,196,0.07)",
 							Icon: Zap,
+							image: hospital,
 						},
 						{
 							title: "24/7 Diagnostics",
@@ -969,6 +970,7 @@ function FacilitiesShowcase() {
 							color: "#8b5cf6",
 							bg: "rgba(139,92,246,0.07)",
 							Icon: TestTube,
+							image: orthopedicsImg,
 						},
 						{
 							title: "Modern Equipment",
@@ -976,36 +978,50 @@ function FacilitiesShowcase() {
 							color: "#10b981",
 							bg: "rgba(16,185,129,0.07)",
 							Icon: Settings,
+							image: generalMedicineImg,
 						},
 					].map((f, i) => (
 						<div
 							key={i}
-							className="card-lift rounded-2xl p-5 sm:p-6 text-center animate-fade-up"
+							className="card-lift rounded-2xl overflow-hidden text-center flex flex-col group animate-fade-up"
 							style={{
 								background: "#ffffff",
 								border: "1px solid #e0ecf8",
 								animationDelay: `${i * 0.1}s`,
 							}}
 						>
-							<div
-								className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mx-auto mb-3 sm:mb-4 flex items-center justify-center"
-								style={{ background: f.bg }}
-							>
-								<f.Icon
-									className="w-5 h-5 sm:w-6 sm:h-6"
-									style={{ color: f.color }}
-									strokeWidth={1.5}
+							<div className="w-full h-36 sm:h-44 overflow-hidden relative">
+								<img 
+									src={f.image} 
+									alt={f.title} 
+									className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
 								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 							</div>
-							<h4
-								className="font-bold text-sm mb-1"
-								style={{ color: "#1a2340" }}
-							>
-								{f.title}
-							</h4>
-							<p className="text-xs sm:text-sm" style={{ color: "#6a7a99" }}>
-								{f.sub}
-							</p>
+							<div className="p-4 sm:p-5 flex flex-col items-center">
+								<div
+									className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mx-auto mb-3 sm:mb-4 flex items-center justify-center -mt-10 relative z-10 border-2 border-white shadow-sm"
+									style={{ background: "#ffffff" }}
+								>
+									<f.Icon
+										className="w-5 h-5 sm:w-6 sm:h-6"
+										style={{ color: f.color }}
+										strokeWidth={1.5}
+									/>
+								</div>
+								<h4
+									className="font-bold text-sm sm:text-base mb-1"
+									style={{ color: "#1a2340" }}
+								>
+									{f.title}
+								</h4>
+								<p
+									className="text-xs sm:text-sm"
+									style={{ color: "#6a7a99" }}
+								>
+									{f.sub}
+								</p>
+							</div>
 						</div>
 					))}
 				</div>
@@ -1372,7 +1388,7 @@ function CTASection() {
 						</p>
 						<div className="space-y-3 sm:space-y-4">
 							{[
-								[PhoneCall, "Emergency Helpline", "9008608842"],
+								[PhoneCall, "Emergency Helpline", "9901984418"],
 								[MapPin, "Visit Us At", "Muddinpalya, Bangalore"],
 							].map(([Icon, label, val], i) => (
 								<div

@@ -155,7 +155,7 @@ export default function Specialties() {
 									</Link>
 
 									<a
-										href="tel:9008608842"
+										href="tel:9901984418"
 										className="bg-brand-orange/20 hover:bg-brand-orange p-2.5 rounded text-brand-orange hover:text-[#1a2340] transition-colors"
 									>
 										<Phone className="w-4 h-4" />

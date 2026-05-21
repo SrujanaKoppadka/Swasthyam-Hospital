@@ -162,10 +162,10 @@ export default function Contact() {
 											</a>
 											<span>,</span>
 											<a
-												href="tel:9008608842"
+												href="tel:9901984418"
 												className="text-brand-gold hover:text-brand-orange font-medium"
 											>
-												9008608842
+												9901984418
 											</a>
 										</p>
 									</div>
@@ -249,7 +249,7 @@ export default function Contact() {
 							Call Now
 						</a>
 						<a
-							href="https://wa.me/919008608842?text=I want to book an appointment"
+							href="https://wa.me/919901984418?text=I want to book an appointment"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="flex-1 bg-green-500 hover:bg-green-600 text-white text-center py-3 px-6 rounded-lg font-bold uppercase tracking-widest text-[11px] flex items-center justify-center gap-2 transition-colors"
