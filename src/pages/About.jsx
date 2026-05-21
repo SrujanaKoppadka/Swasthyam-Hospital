@@ -31,7 +31,7 @@ export default function About() {
 							advanced medical infrastructure with a deeply compassionate
 							approach to patient care.
 						</p>
-						<p className="text-base leading-relaxed mb-8 text-slate-500">
+						<p className="text-base leading-relaxed mb-8 text-slate-700">
 							Our multidisciplinary team of highly experienced specialists,
 							dedicated nurses, and state-of-the-art facilities ensure that
 							every patient receives comprehensive, personalized treatment. From

@@ -247,7 +247,7 @@ function Footer() {
 					<p className="text-blue-200 mb-3 font-semibold italic text-lg tracking-wide">
 						"Your Health, Our Priority"
 					</p>
-					<p className="text-slate-400 text-sm leading-relaxed">
+					<p className="text-slate-400 text-base md:text-lg leading-relaxed">
 						Advanced care meets trusted healing. We provide world-class medical
 						facilities with compassionate care.
 					</p>
@@ -262,7 +262,7 @@ function Footer() {
 						></span>
 						Quick Links
 					</h3>
-					<ul className="space-y-3 text-slate-400 text-sm">
+					<ul className="space-y-3 text-slate-400 text-base md:text-lg">
 						{[
 							["About Us", "/about"],
 							["Specialties", "/specialties"],
@@ -292,7 +292,7 @@ function Footer() {
 						></span>
 						Contact
 					</h3>
-					<ul className="space-y-4 text-slate-400 text-sm w-full">
+					<ul className="space-y-4 text-slate-400 text-base md:text-lg w-full">
 						{/* Appointments */}
 						<li className="flex items-start gap-3 justify-center md:justify-start">
 							<Phone
@@ -381,12 +381,12 @@ function Footer() {
 						<p className="font-bold text-xl mb-2" style={{ color: "#7db8e8" }}>
 							24/7 Open
 						</p>
-						<p className="text-sm text-slate-400 mb-4">
+						<p className="text-base md:text-lg text-slate-400 mb-4">
 							Our emergency and trauma center is available round the clock.
 						</p>
 						<a
 							href={`tel:${CONTACT_INFO.emergency}`}
-							className="w-full block text-center bg-red-600 hover:bg-red-700 text-white py-2.5 rounded-lg font-medium transition-all hover:-translate-y-0.5 hover:shadow-lg text-sm"
+							className="w-full block text-center bg-red-600 hover:bg-red-700 text-white py-2.5 rounded-lg font-medium transition-all hover:-translate-y-0.5 hover:shadow-lg text-base md:text-lg"
 						>
 							Emergency Call: {CONTACT_INFO.emergency}
 						</a>
@@ -396,7 +396,7 @@ function Footer() {
 
 			{/* Bottom bar — FIX: pb-20 on mobile so it clears the sticky bottom action bar */}
 			<div
-				className="max-w-7xl mx-auto px-6 py-6 pb-24 md:pb-6 flex flex-col items-center md:flex-row md:justify-between gap-3 text-xs text-slate-500 text-center"
+				className="max-w-7xl mx-auto px-6 py-6 pb-24 md:pb-6 flex flex-col items-center md:flex-row md:justify-between gap-3 text-sm md:text-base text-slate-500 text-center"
 				style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
 			>
 				<p>
