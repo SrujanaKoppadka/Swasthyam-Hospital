@@ -35,6 +35,10 @@ import review1 from "../assets/review1.mp4";
 import review2 from "../assets/review2.mp4";
 import review3 from "../assets/review3.mp4";
 import review4 from "../assets/review4.mp4";
+import modernicu from "../assets/modern-icu.jpg";
+import operation from "../assets/operation-theatre.jpg";
+import diagnostics from "../assets/diagnostics.jpg";
+import modernequipment from "../assets/modern-technology.jpg";
 
 function useScrollReveal() {
 	const ref = useRef(null);
@@ -954,7 +958,7 @@ function FacilitiesShowcase() {
 							color: "#ef4444",
 							bg: "rgba(239,68,68,0.07)",
 							Icon: Activity,
-							image: icuEmergencyImg,
+							image: modernicu,
 						},
 						{
 							title: "Operation Theatres",
@@ -962,7 +966,7 @@ function FacilitiesShowcase() {
 							color: "#1a6fc4",
 							bg: "rgba(26,111,196,0.07)",
 							Icon: Zap,
-							image: hospital,
+							image: operation,
 						},
 						{
 							title: "24/7 Diagnostics",
@@ -970,7 +974,7 @@ function FacilitiesShowcase() {
 							color: "#8b5cf6",
 							bg: "rgba(139,92,246,0.07)",
 							Icon: TestTube,
-							image: orthopedicsImg,
+							image: diagnostics,
 						},
 						{
 							title: "Modern Equipment",
@@ -978,7 +982,7 @@ function FacilitiesShowcase() {
 							color: "#10b981",
 							bg: "rgba(16,185,129,0.07)",
 							Icon: Settings,
-							image: generalMedicineImg,
+							image: modernequipment,
 						},
 					].map((f, i) => (
 						<div
