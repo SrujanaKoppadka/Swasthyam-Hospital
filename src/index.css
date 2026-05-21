@@ -186,9 +186,3 @@ h1, h2, h3, h4, h5, h6 {
 .date-input-visible::-webkit-datetime-edit-year-field {
   color: #1a2340;
 }
-
-/* Increase paragraph size globally */
-p {
-  font-size: 1.125rem;
-  line-height: 1.7;
-}

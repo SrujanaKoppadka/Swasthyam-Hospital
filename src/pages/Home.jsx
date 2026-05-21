@@ -300,7 +300,7 @@ function HeroSection() {
 						<p
 							className="h-anim-3"
 							style={{
-								fontSize: 18,
+								fontSize: 17,
 								color: "rgba(255,255,255,0.72)",
 								lineHeight: 1.72,
 								maxWidth: 420,
@@ -731,7 +731,7 @@ function SpecialtiesPreview() {
 						Our <span style={{ color: "#e05c1a" }}>Specialties</span>
 					</h2>
 					<p
-						className="text-lg sm:text-xl max-w-2xl mx-auto"
+						className="text-lg max-w-2xl mx-auto"
 						style={{ color: "#4a5a7a" }}
 					>
 						Comprehensive care across multiple disciplines, all under one roof.
