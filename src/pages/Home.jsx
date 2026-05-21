@@ -771,14 +771,14 @@ function SpecialtiesPreview() {
 									/>
 								</div>
 								<h3
-									className="font-bold text-[11px] sm:text-sm uppercase tracking-wide mb-1 sm:mb-2"
+									className="font-bold text-xs sm:text-base uppercase tracking-wide mb-1 sm:mb-2"
 									style={{ color: "#1a2340" }}
 								>
 									{spec.name}
 								</h3>
 								{/* FIX: hide description on mobile to keep cards compact */}
 								<p
-									className="hidden sm:block text-xs leading-relaxed"
+									className="hidden sm:block text-sm leading-relaxed"
 									style={{ color: "#6a7a99" }}
 								>
 									{spec.desc}
